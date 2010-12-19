@@ -1,3 +1,8 @@
+Usage:
+./resetbp.sh [databasename]
+
+You'll have to replace the username/pw to your local mysql installation.
+
 This is a crappy script I use to wipe out a local BuddyPress installation so that I can test installation more quickly. It destroys the BP and bbPress tables, deletes BP options, and switches the theme back to Twenty Ten so that you don't get a white screen.
 
 This script sucks and I am not responsible for any damage you do to you, your WP installation, or the well being of your loved ones in using it.
