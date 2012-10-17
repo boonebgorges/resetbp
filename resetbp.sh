@@ -12,7 +12,9 @@ do
 done
 
 
-sql="USE $database;DELETE FROM wp_options WHERE option_name LIKE 'bp-%';"
+sql="USE $database;DELETE FROM wp_options WHERE option_name LIKE 'bp-%';
+     USE $database;DELETE FROM wp_options WHERE option_name LIKE 'bp_%';
+     USE $database;DELETE FROM wp_options WHERE option_name LIKE '_bp_%';"
 mysql -u root --password=root <<< $sql
 
 sql="USE $database;DELETE FROM wp_sitemeta WHERE meta_key LIKE 'bp-%';"
